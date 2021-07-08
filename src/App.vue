@@ -1,19 +1,24 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <AppTaskShow></AppTaskShow>
+    <AppTaskEntry></AppTaskEntry>
+    <AppTaskFilter></AppTaskFilter>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AppTaskEntry from "@/components/AppTaskEntry.vue";
+import AppTaskFilter from "@/components/AppTaskFilter.vue";
+import AppTaskShow from "@/components/AppTaskShow.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    AppTaskEntry,
+    AppTaskFilter,
+    AppTaskShow,
+  },
+};
 </script>
 
 <style>
